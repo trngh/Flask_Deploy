@@ -89,6 +89,7 @@
 <body>
     <div class="container">
         <h1>Q&A Chat</h1>
+        <button id="open-image" class="btn btn-info mb-3">Buy me a coffee!</button>
         <div class="chat-box" id="chat-box">
             <!-- Messages will appear here -->
         </div>
@@ -140,6 +141,10 @@
             } catch (error) {
                 console.error('Error:', error);
             }
+        });
+
+        document.getElementById('open-image').addEventListener('click', () => {
+            window.open('https://img.vietqr.io/image/vietcombank-9352180428-compact.jpg?amount=20000&addInfo=Donate%20Trung%20Nghia&accountName=Donate%20Trung%20Nghia', '_blank');
         });
     </script>
 </body>
